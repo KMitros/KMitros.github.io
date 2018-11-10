@@ -1,0 +1,966 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Бюро Весов</title>
+	<meta name="Keywords" content="Бюро Весов">
+	<meta name="Description" content="Бюро Весов">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
+
+	<link rel="stylesheet" href="./css/jquery-ui.css" media="all">
+	<link rel="stylesheet" href="./css/lightbox.css" media="all">
+	<link rel="stylesheet" href="./css/fotorama.css" media="all">
+	<link rel="stylesheet" href="./css/main.css" media="all">
+	<link rel="stylesheet" href="./css/responsive.css" media="all">
+
+	<!--[if lte IE 8]>
+		<script src="js/ie/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="header-group">
+	<div class="slide-to-top js-to-top">
+	<img class="slide-to-top__img" src="img/icon/arrow-top_w.png" alt="arrow">
+	<div class="slide-to-top__text">Наверх</div>
+</div>
+<div class="popup-callback">
+	<div class="overlay popup-callback__overlay"></div>
+	<div class="callback-form">
+		<div class="popup-close popup-callback__close">
+			<span class="popup-close__text">Закрыть</span>
+			<img src="img/icon/close-cities.png">
+		</div>
+		<div class="popup-callback__text">Оставьте свой номер<br> телефона, мы перезвоним вам</div>
+		<form class="form">
+			<input class="input popup__input" name="phone" placeholder="Ваш телефон">
+			<input type="submit" class="btn btn-request" value="Перезвоните мне">
+		</form>
+	</div>
+</div>
+<div class="cities">
+	<div class="g-wrap-content g-center">
+		<div class="cities-list">
+			<div class="cities-list__wrap-column">
+				<div class="popup-close cities__close">
+					<span class="popup-close__text">Закрыть</span>
+					<img src="img/icon/close-cities.png">
+				</div>
+				<div class="cities-search-group cities__search-group">
+					<span class="city-select city-select_padding-right_20">
+						Москва
+						<img class="arrow-down city-select__arrow" src="img/icon/arrow-down.png" alt="arrow-down">
+					</span>
+					<div class="search-input-group search-input_inline-block">
+						<img class="search-input-group__icon" src="img/icon/search-cities.png">
+						<input class="search-input" placeholder="Найди свой город">
+						<img class="search-input-group__close" src="img/icon/close-search.png">
+					</div>
+				</div>
+				<div class="cities-list__column">
+					<div class="cities-list__letter">а</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Абакан</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Азнакаево</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Азов</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Алексин</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Альметьевск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Анапа</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Арзамас</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Астрахань</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Аткарск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Ахтубинск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Ачинск</span></a>
+					<div class="cities-list__letter">б</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Балаково</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Балахна</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Балашиха</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Балашов</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Батайск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Белгород</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Белореченск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Березники</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Богородск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Бор</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Борисоглебск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Бугульма</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Бугуруслан</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Бузулук</span></a>
+				</div>
+				<div class="cities-list__column">
+					<div class="cities-list__letter">в</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Великий Новгород</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Владикавказ</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Владимир</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Волгоград</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Волгодонск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Волжск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Волжский</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Вологда</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Вольск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Воронеж</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Ворсма</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Всеволожск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Выборг</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Выкса</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Вязники</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Вятские Поляны</span></a>
+					<div class="cities-list__letter">г</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Гатчина</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Геленджик</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Георгиевск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Городец</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Гороховец</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Городец</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Гороховец</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Георгиевск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Городец</span></a>
+				</div>
+				<div class="cities-list__column">
+					<div class="cities-list__letter">д</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Дзержинск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Димитровград</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Дмитров</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Долгопрудный</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Домодедово</span></a>
+					<div class="cities-list__letter">е</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Ейск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Екатеринбург</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Елабуга</span></a>
+					<div class="cities-list__letter">ж</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Железноводск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Железногорск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Железнодорожный</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Жигулевск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Жирновск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Жуковский</span></a>
+					<div class="cities-list__letter">з</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Зеленоград</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Заволжье</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Закамск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Зеленогорск</span></a>
+				</div>
+				<div class="cities-list__column">
+					<div class="cities-list__letter">и</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Иваново</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Изобильный</span></a>
+					<div class="cities-list__letter">к</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Казань</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Калач-на-Дону</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Калуга</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Каменск-Уральский</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Каменск-Шахтинский</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Камышин</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Каневская</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Канск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Кинель</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Кириши</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Клин</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Ковров</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Колпино</span></a>
+					<div class="cities-list__letter">л</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Лениногорск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Липецк</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Лобня</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Лысково</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Люберцы</span></a>
+				</div>
+				<div class="cities-list__column">
+					<div class="cities-list__letter">м</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Магнитогорск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Майкоп</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Маркс</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Миасс</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Минеральные Воды</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Михайловка</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Морозовск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Москва</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Муром</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Мытищи</span></a>
+					<div class="cities-list__letter">н</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Набережные Челны</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Навашино</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Невинномысск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Нижнекамск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Нижний Новгород</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Нижний Тагил</span></a>
+					<div class="cities-list__letter">с</div>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Салават</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Сальск</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Самара</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Санкт-Петербург</span></a>
+					<a class="cities-list__item" href="#"><span class="cities-list__text">Саратов</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="header">
+	<div class="main-nav-group">
+		<div class="g-wrap">
+			<div class="main-nav-group__logo">
+				<a href="#"><img class="logo" src="./img/logo.png"></a>
+			</div>
+			<nav class="main-nav main-nav-group__items g-wrap-content">
+				<a href="#"><img class="logo main-nav__logo" src="./img/logo.png"></a>
+				<a class="main-nav__item" href="#">Как выбрать весы</a>
+				<div class="main-nav__separator">|</div>
+				<a class="main-nav__item" href="#">Как оплатить заказ</a>
+				<div class="main-nav__separator">|</div>
+				<a class="main-nav__item" href="#">Где получить заказ</a>
+				<div class="main-nav__separator">|</div>
+				<a class="main-nav__item" href="#">Полезная информация</a>
+				<div class="main-nav__separator">|</div>
+				<a class="main-nav__item" href="#">Контакты</a>
+			</nav>
+			<img class="menu-icon main-nav-group__menu-icon" src="./img/menu.png">
+		</div>
+	</div>
+	<div class="main-info-group js-nav-fixed">
+		<div class="g-wrap">
+			<div class="main-info-group__desc">Производство и продажа профессиональных весов</div>
+			<div class="main-info g-wrap-content">
+				<div class="give-point main-info__point">
+					Доступно
+					<a class="link_theme_orange" href="#">3</a>
+					точки выдачи товаров г.
+					<span class="city-select city-select_padding-left-10">
+						Москва
+						<img class="arrow-down city-select__arrow" src="img/icon/arrow-down.png" alt="arrow-down">
+					</span>
+				</div>
+				<div class="callback-group main-info__callback">
+					<div class="btn-callback js-popup-callback callback-group__btn">Обратный звонок</div>
+					<div class="phone callback-group__info">
+						<div class="phone-title">
+							8 800 888-77-66
+							<img class="arrow-down" src="img/icon/arrow-down.png" alt="arrow-down">
+						</div>
+						<div class="phone-desc">Бесплатно по России</div>
+						<div class="hint phone__hint">
+							<div class="hint-arrow"></div>
+							<div class="hint__content">
+								<div class="phone-grope">
+									<div class="phone-desc phone-desc_margin-bottom5">Москва</div>
+									<div class="phone-title">8 800 888-77-66</div>
+								</div>
+								<div class="phone-grope">
+									<div class="phone-desc phone-desc_margin-bottom5">Москва</div>
+									<div class="phone-title">8 800 888-77-66</div>
+								</div>
+								<div class="phone-grope">
+									<div class="phone-desc phone-desc_margin-bottom5">Москва</div>
+									<div class="phone-title">8 800 888-77-66</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="side-nav-group">
+		<div class="g-wrap">
+			<div class="side-nav-group__wrap-content">
+				<div class="side-nav-group__inner_wrap">
+					<div class="side-nav-group__action">
+						<img src="./img/menu.png" alt="menu">
+						Каталог
+						<img class="arrow-down" src="img/icon/arrow-down_orange.png" alt="arrow-down">
+					</div>
+
+					<nav class="side-nav scroll-holder">
+						<div class="side-nav__item js-side-nav__item">
+							<span class="side-nav__text">Автомобильные</span>
+						</div>
+						<div class="side-nav__item js-side-nav__item"><span class="side-nav__text">Балочные</span></div>
+						<div class="side-nav__item js-side-nav__item">
+							<span class="side-nav__text">Платформенные</span>
+							<div class="side-nav__item-small">(напольные)</div>
+						</div>
+						<div class="side-nav__item js-side-nav__item">
+							<span class="side-nav__text">Платформенные</span>
+							<div class="side-nav__item-small">(настольные)</div>
+						</div>
+						<div class="side-nav__item js-side-nav__item"><span class="side-nav__text">Животноводческие</span></div>
+						<div class="side-nav__item js-side-nav__item"><span class="side-nav__text">Крановые весы</span></div>
+						<div class="side-nav__item js-side-nav__item"><span class="side-nav__text">Высокоточные</span></div>
+						<div class="side-nav__item js-side-nav__item"><span class="side-nav__text">Медицинские</span></div>
+						<div class="side-nav__item js-side-nav__item"><span class="side-nav__text">Монорельсовые</span></div>
+						<div class="side-nav__item js-side-nav__item"><span class="side-nav__text">Взрывобезопасные</span></div>
+						<div class="side-nav__item"><span class="side-nav__text"></span></div>
+						<div class="side-nav__item js-side-nav__item"><span class="side-nav__text">По отраслям</span></div>
+						<div class="side-nav__item js-side-nav__item"><span class="side-nav__text">По нагрузке</span></div>
+						<div class="side-nav__item js-side-nav__item"><span class="side-nav__text">По производителю</span></div>
+						<div class="side-nav__item"><span class="side-nav__text"></span></div>
+						<div class="side-nav__item"><span class="side-nav__text side-nav__text_orange">Услуги и севис</span></div>
+					</nav>
+
+					<div class="side-nav-hint scroll-holder">
+						<div class="side-nav-hint__arrow"></div>
+						<div class="side-nav-hint__content">
+							<div class="side-nav-hint__item">
+								<a href="#">
+									<img class="side-nav-hint__img" src="./img/no-img.jpg" alt="ava">
+									<div class="side-nav-hint__name"><span class="link_gray">Подкладные</span></div>
+								</a>
+							</div>
+							<div class="side-nav-hint__item">
+								<a href="#">
+									<img class="side-nav-hint__img" src="./img/no-img.jpg" alt="ava">
+									<div class="side-nav-hint__name"><span class="link_gray">С пандусами</span></div>
+								</a>
+							</div>
+							<div class="side-nav-hint__item">
+								<a href="#">
+									<img class="side-nav-hint__img" src="./img/no-img.jpg" alt="ava">
+									<div class="side-nav-hint__name"><span class="link_gray">Поосные</span></div>
+								</a>
+							</div>
+							<div class="side-nav-hint__item">
+								<a href="#">
+									<img class="side-nav-hint__img" src="./img/no-img.jpg" alt="ava">
+									<div class="side-nav-hint__name"><span class="link_gray">Переносные</span></div>
+								</a>
+							</div>
+							<div class="side-nav-hint__item">
+								<a href="#">
+									<img class="side-nav-hint__img" src="./img/no-img.jpg" alt="ava">
+									<div class="side-nav-hint__name"><span class="link_gray">Мобильные</span></div>
+								</a>
+							</div>
+							<div class="side-nav-hint__item">
+								<a href="#">
+									<img class="side-nav-hint__img" src="./img/no-img.jpg" alt="ava">
+									<div class="side-nav-hint__name"><span class="link_gray">Бесфундаментные</span></div>
+								</a>
+							</div>
+							<div class="side-nav-hint__item">
+								<a href="#">
+									<img class="side-nav-hint__img" src="./img/no-img.jpg" alt="ava">
+									<div class="side-nav-hint__name"><span class="link_gray">Платформенные</span></div>
+								</a>
+							</div>
+							<div class="side-nav-hint__item">
+								<a href="#">
+									<img class="side-nav-hint__img" src="./img/no-img.jpg" alt="ava">
+									<div class="side-nav-hint__name"><span class="link_gray">Бетонные</span></div>
+								</a>
+							</div>
+							<div class="side-nav-hint__item">
+								<a href="#">
+									<img class="side-nav-hint__img" src="./img/no-img.jpg" alt="ava">
+									<div class="side-nav-hint__name"><span class="link_gray">Взвешивания в динамике</span></div>
+								</a>
+							</div>
+							<div class="side-nav-hint__item">
+								<a href="#">
+									<img class="side-nav-hint__img" src="./img/no-img.jpg" alt="ava">
+									<div class="side-nav-hint__name"><span class="link_gray">Колейные</span></div>
+								</a>
+							</div>
+							<div class="side-nav-hint__item side-nav-hint__item_all">
+								<div class="side-nav-hint__all"><a href="#"><span class="link_orange">Смотреть все</span></a></div>
+							</div>
+						</div>
+						<div class="side-nav-hint__subscr-group">
+							<div class="side-nav-hint__subscr-item"><span class="link_gray link_weight_m">10 тонн</span></div>
+							<div class="side-nav-hint__subscr-item"><span class="link_gray link_weight_m">20 тонн</span></div>
+							<div class="side-nav-hint__subscr-item"><span class="link_gray link_weight_m">30 тонн</span></div>
+							<div class="side-nav-hint__subscr-item"><span class="link_gray link_weight_m">40 тонн</span></div>
+							<div class="side-nav-hint__subscr-item"><span class="link_gray link_weight_m">50 тонн</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="g-wrap-content">
+	<div class="content-group">
+		<div class="content-item">
+			<div class="g-wrap">
+				<div class="g-wrap-content">
+					<div class="slider">
+						<div class="slider__title">
+							<span class="link_gray g-bold">11022</span> предложений по весовому оборудованию на одном сайте<br>
+							с <span class="g-bold">3</span> пунктами выдачи<br>
+							в <span class="g-bold">Новосибирске</span>
+							<div class="decoration slider__decoration"></div>
+						</div>
+
+						<div class="fotorama" data-width="100%" data-height="490" data-fit="cover" data-arrows="true" data-click="false" data-swipe="true">
+							<div class="slide">
+								<div class="slide__img-wrap"><img class="slide__img" src="img/pages/index/slide_1.png"></div>
+								<div class="slide__info">
+									<div class="slide__info-title">Без подделок</div>
+									<div class="slide__info-desc">Только проверенные решения<br>(только профессиональные весы)</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide__img-wrap"><img class="slide__img" src="img/pages/index/slide_2.png"></div>
+								<div class="slide__info">
+									<div class="slide__info-title">Без гаражного производства</div>
+									<div class="slide__info-desc">Только 100% точности</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide__img-wrap"><img class="slide__img" src="img/pages/index/slide_3.png"></div>
+								<div class="slide__info">
+									<div class="slide__info-title">Без дешевого Китая!</div>
+									<div class="slide__info-desc">Срок службы от 8 лет<br>(только сертифицированная продукция)</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide__img-wrap"><img class="slide__img" src="img/pages/index/slide_4.png"></div>
+								<div class="slide__info">
+									<div class="slide__info-title">Без деревянных датчиков :)</div>
+									<div class="slide__info-desc">Только электронные весы</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="plus-list plus-list__index">
+							<div class="plus-list__item">
+								<img src="img/icon/ok.png" alt="ok">
+								<div class="plus-list__info">
+									<div class="plus-list__title">Без подделок,</div>
+									<div class="plus-list__desc">
+										Только проверенные решения<br>
+										(только профессиональные весы)
+									</div>
+								</div>
+							</div>
+							<div class="plus-list__item">
+								<img src="img/icon/ok.png" alt="ok">
+								<div class="plus-list__info">
+									<div class="plus-list__title">Без гаражного производства</div>
+									<div class="plus-list__desc">Только 100% точности</div>
+								</div>
+							</div>
+							<div class="plus-list__item">
+								<img src="img/icon/ok.png" alt="ok">
+								<div class="plus-list__info">
+									<div class="plus-list__title">Без дешевого Китая!</div>
+									<div class="plus-list__desc">
+										Срок службы от 8 лет<br>
+										(только сертифицированная продукция)
+									</div>
+								</div>
+							</div>
+							<div class="plus-list__item">
+								<img src="img/icon/ok.png" alt="ok">
+								<div class="plus-list__info">
+									<div class="plus-list__title">Без деревянных датчиков :)</div>
+									<div class="plus-list__desc">Только электронные весы</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content-item g-margin-bottom_0">
+			<div class="content-title"><span class="g-light">вы</span> получаете</div>
+			<div class="decision">
+				<div class="decision__item">
+					<div class="decision__wrap"><img class="decision__img" src="img/icon-big/decision-1.png" alt="des"></div>
+					<div class="decision__title">Недорогие весы для простого взвешивания</div>
+					<div class="decision__text">Недорого: у вас мало взвешиваний, либо недорогой товар, либо работа в идеальных условиях</div>
+				</div>
+				<div class="decision__item">
+					<div class="decision__wrap"><img class="decision__img" src="img/icon-big/decision-2.png" alt="des"></div>
+					<div class="decision__title">Весы с мгновенной поставкой</div>
+					<div class="decision__text">работа встала, весы нужны СРОЧНО!!!</div>
+				</div>
+				<div class="decision__item">
+					<div class="decision__wrap"><img class="decision__img" src="img/icon-big/decision-3.png" alt="des"></div>
+					<div class="decision__title">Весы с запасом прочности и надежности</div>
+					<div class="decision__text">высокая стоимость простоя в работе весов или работа в сложных условиях эксплуатации</div>
+				</div>
+				<div class="decision__item">
+					<div class="decision__wrap"><img class="decision__img" src="img/icon-big/decision-4.png" alt="des"></div>
+					<div class="decision__title">с простой интеграцией с ПК и 1 С</div>
+					<div class="decision__text">современный учет</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="full-bg-wrap">
+	<div class="overlay-bg overlay-bg_grey"></div>
+	<div class="g-wrap">
+		<div class="full-bg">
+			<div class="g-wrap-content g-z-index-1">
+				<div class="content-title content-title_dark g-color_black">
+					<span class="g-light">Заполните форму и мы</span> подберем Вам весы за 10 минут.<br>
+					<span class="g-light">Или воспользуйтесь</span> каталогом слева
+				</div>
+				<form class="form form_horiz">
+					<input class="input input_horiz" name="name" placeholder="Ваше имя">
+					<input class="input input_horiz" name="phone" placeholder="Ваш телефон">
+					<input type="submit" class="btn btn-request" value="Оставить заявку">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="full-bg-wrap">
+	<div class="overlay-bg overlay-bg_mask"></div>
+	<div class="g-wrap">
+		<div class="full-bg bg-category-2">
+			<div class="g-wrap-content g-z-index-1">
+				<div class="header-comment">
+					<div class="header-comment__title">Примерочная</div>
+					<div class="decoration"></div>
+					<div class="header-comment__text">Ищете весы?</div>
+					<div class="header-comment__subtext">Воспользуйтесь примерочной или перейдите в <span class="link_gray">каталог</span></div>
+				</div>
+				<div class="filter-form-group">
+					<div class="filter-form">
+						<form class="form filter-form__wrap" action="#">
+							<div class="filter-form__title">Укажите:</div>
+							<div class="select-group">
+								<div class="select-title">Максимальная масса груза:</div>
+								<select class="select" name="mass_max">
+									<option value="1">До 1 кг</option>
+									<option value="10">До 10 кг</option>
+									<option value="100">До 100 кг</option>
+									<option value="1000">До 1000 кг</option>
+									<option value="1000+">Больше 1000 кг</option>
+								</select>
+							</div>
+							<div class="select-group">
+								<div class="select-title">Интенсивность использования:</div>
+								<select class="select" name="count_using">
+									<option value="10">10 раз в сутки</option>
+									<option value="20">20 раз в сутки</option>
+									<option value="30">30 раз в сутки</option>
+									<option value="50">50 раз в сутки</option>
+									<option value="100">100 раз в сутки</option>
+								</select>
+							</div>
+							<div class="select-group">
+								<div class="select-title">Габариты груза:</div>
+								<select class="select" name="amount">
+									<option value="1">До 0.001 м&sup3;</option>
+									<option value="10">До 10 кг</option>
+									<option value="100">До 100 кг</option>
+									<option value="1000">До 1000 кг</option>
+									<option value="1000+">Больше 1000 кг</option>
+								</select>
+							</div>
+							<div class="select-group">
+								<div class="select-title">Условия эксплуатации:</div>
+								<select class="select" name="exploitation">
+									<option value="1">Не агрессивная среда</option>
+									<option value="10">Средней агрессивности</option>
+									<option value="100">Агрессивная</option>
+									<option value="1000">Крайне агрессивная!! ААА!!!</option>
+								</select>
+							</div>
+							<div class="select-group select-group_under">
+								<div class="select-title">Точность:</div>
+								<select class="select" name="mass_max">
+									<option value="2">До 2%</option>
+									<option value="5">До 5%</option>
+									<option value="10">До 10%</option>
+									<option value="15">До 15%</option>
+									<option value="15+">Больше 15%</option>
+								</select>
+							</div>
+							<div class="select-group">
+								<div class="select-title">Приблизительная стоимость:</div>
+								<select class="select" name="mass_max">
+									<option value="90000">Сумма 90.000 руб</option>
+									<option value="100000">Сумма 100.000 руб</option>
+									<option value="150000">Сумма 150.000 руб</option>
+									<option value="200000">Сумма 200.000 руб</option>
+									<option value="500000">Сумма 500.000 руб</option>
+								</select>
+								<input type="submit" class="btn btn-request filter-form__btn" value="Подобрать">
+							</div>
+						</form>
+					</div>
+					<div class="centred-desc-wrap g-flex-start g-bg-gray">
+						<div class="centred-desc centred-desc_start">
+							<span class="centred-desc__light">Укажите необходимые параметры</span><br>
+							и мы подберем
+							Вам весы
+							<img class="centred-desc__img" src="img/arrow-cap.png" alt="arrow">
+						</div>
+						<div class="searched">
+							<div class="searched__header">Хит продаж</div>
+							<div class="searched__name">Sanitas SKS20</div>
+							<div class="searched__info">
+								<img class="searched__img child-block" src="img/pages/index/product.jpg" alt="product">
+								<div class="searched-desc child-block">
+									<div class="searched-desc__title">Категория:</div>
+									<div class="searched-desc__cat">
+										<span class="link_gray">Весы подкладные поосные, потележечные</span>
+									</div>
+									<div>Нагрузка 5000 кг, цена деления 2 кг, платформа 1250х1250мм, производитель В3ВТ,
+									срок поставки 4 недели, доставка или сомовывоз из Волгограда.</div>
+								</div>
+								<div class="btn js-popup-callback child-block">
+									<span>Заказать</span>
+								</div>
+								<div class="price child-block">
+									<div class="price-old price-old_mini">9120 руб.</div>
+									<div class="price-new price-new_mini">7120 руб.</div>
+								</div>
+								<div class="child-block">
+									<span class="link_dotted g-fz-16 js-popup-callback">Получить индивидуальную цену</span>
+								</div>
+								<div class="child-block">
+									<span class="link_gray">К сравнению</span>
+								</div>
+							</div>
+							<div class="searched__more">
+								<div class="searched-desc1">По вашему запросу было найдено <span class="link_gray g-bold">37</span> весов</div>
+								<div class="searched-desc2"><span class="link_orange">Посмотреть</span></div>
+								<div class="searched-desc3">Не нашли нужные весы?</div>
+								<div class="searched-desc4">Разработаем индивидуальные весы<br>под вашу задачу!</div>
+								<div class="btn js-popup-callback searched__action">
+									<span>Отправить запрос</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="g-wrap-content">
+	<div class="content-group">
+		<div class="content-item g-margin-bottom_0">
+			<div class="content-title content-title_dark g-color_black">
+				<span class="g-light">Пару</span> слов о нас<br>
+				<div class="decoration"></div>
+			</div>
+			<div class="personage">
+				<img class="personage__img" src="img/pages/index/photo.jpg" alt="ploto">
+				<div class="personage__content">
+					<div class="personage__name">Олег Иванов</div>
+					<div class="personage__job">Должность</div>
+					<div class="decoration decoration_personage"></div>
+					<div class="personage__text">
+						Товарищи! укрепление и развитие структуры требуют определения и уточнения соответствующий
+						условий активизации. Равным образом начало повседневной работы по формированию позиции требуют
+						определения
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="full-bg-wrap">
+	<div class="overlay-bg overlay-bg_mask"></div>
+	<div class="g-wrap">
+		<div class="full-bg bg-category-1">
+			<div class="g-wrap-content">
+				<div class="about-us">
+					<div class="header-comment">
+						<div class="header-comment__title"><span class="g-light">О</span> нас</div>
+						<div class="decoration"></div>
+					</div>
+					<div class="about">
+						<div class="about__item">
+							<div class="about__img-wrap"><img class="about__img" src="img/icon-big/tag.png" alt="tag"></div>
+							<div class="about__info">
+								<div class="about__title">Честная цена</div>
+								<div class="about__text">Продаем по ценам заводов<br>изготовителей</div>
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="about__img-wrap"><img class="about__img" src="img/icon-big/packages.png" alt="tag"></div>
+							<div class="about__info">
+								<div class="about__title">Большой ассортимент</div>
+								<div class="about__text">В наличии более 780 моделей<br>весов</div>
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="about__img-wrap"><img class="about__img" src="img/icon-big/black-wrench.png" alt="tag"></div>
+							<div class="about__info">
+								<div class="about__title">Помощь на всех этапах</div>
+								<div class="about__text">Поможем выбрать, организуем доставку,
+									найдем ближайший сервис.</div>
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="about__img-wrap"><img class="about__img" src="img/icon-big/certificationl.png" alt="tag"></div>
+							<div class="about__info">
+								<div class="about__title">Международная сертификация</div>
+								<div class="about__text">Гарантия на всю продукцию<br>
+									3-5 лет</div>
+							</div>
+						</div>
+					</div>
+					<div class="watch-all"><a href="#"><span class="link">Смотреть все</span></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="g-wrap-content">
+	<div class="content-group">
+		<div class="content-item">
+			<div class="content-title content-title_dark g-color_black">
+				<span class="g-light">Отзывы</span> наших клиентов<br>
+				<div class="decoration"></div>
+			</div>
+			<div class="mention-audio-group">
+				<div class="mention-audio">
+					<div><img class="mention-audio__img" src="img/face.jpg" alt="face"></div>
+					<div class="mention-audio__info">
+						<div class="mention-audio__name">название компании</div>
+						<div class="mention-audio__text">Не следует, однако забывать, что консультация с широким активом
+							в значительной степени обуславливает создание форм развития.
+						</div>
+						<div class="audio mention-audio__audio">
+							<div class="audio__text">Прослушать отзыв:</div>
+							<div class="controls">
+								<img class="play" src="img/icon/audio_play.png" alt="play">
+								<img class="pause" src="img/icon/audio_pause.png" alt="pause">
+								<input type="range" value="0" max=""/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mention-audio">
+					<div><img class="mention-audio__img" src="img/face.jpg" alt="face"></div>
+					<div class="mention-audio__info">
+						<div class="mention-audio__name">название компании</div>
+						<div class="mention-audio__text">Не следует, однако забывать, что консультация с широким активом
+							в значительной степени обуславливает создание форм развития.
+						</div>
+						<div class="audio mention-audio__audio">
+							<div class="audio__text">Прослушать отзыв:</div>
+							<div class="controls">
+								<img class="play" src="img/icon/audio_play.png" alt="play">
+								<img class="pause" src="img/icon/audio_pause.png" alt="pause">
+								<input type="range" value="0" max=""/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mention-audio">
+					<div><img class="mention-audio__img" src="img/face.jpg" alt="face"></div>
+					<div class="mention-audio__info">
+						<div class="mention-audio__name">название компании</div>
+						<div class="mention-audio__text">Не следует, однако забывать, что консультация с широким активом
+							в значительной степени обуславливает создание форм развития.
+						</div>
+						<div class="audio mention-audio__audio">
+							<div class="audio__text">Прослушать отзыв:</div>
+							<div class="controls">
+								<img class="play" src="img/icon/audio_play.png" alt="play">
+								<img class="pause" src="img/icon/audio_pause.png" alt="pause">
+								<input type="range" value="0" max=""/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="watch-all watch-all_audio"><a href="#"><span class="link">Показать еще 364 отзыва</span></a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="full-bg-wrap">
+	<div class="overlay-bg overlay-bg_grey"></div>
+	<div class="g-wrap">
+		<div class="full-bg">
+			<div class="g-wrap-content g-z-index-1">
+				<div class="content-title content-title_dark g-color_black">
+					<span class="g-light">Наши</span> партнеры<br>
+					<div class="decoration"></div>
+				</div>
+				<div class="partners-main">
+					<div class="main_block-7_partners">
+						<div class="main_block-7_partner">
+							<img src="./img/pages/index/partner-1.png">
+						</div>
+						<div class="main_block-7_partner">
+							<img src="./img/pages/index/partner-2.png">
+						</div>
+						<div class="main_block-7_partner">
+							<img src="./img/pages/index/partner-3.png">
+						</div>
+						<div class="main_block-7_partner">
+							<img src="./img/pages/index/partner-4.png">
+						</div>
+						<div class="main_block-7_partner">
+							<img src="./img/pages/index/partner-5.png">
+						</div>
+						<div class="main_block-7_partner">
+							<img src="./img/pages/index/partner-6.png">
+						</div>
+					</div>
+					<div class="main_block-7_partners partners_text">
+						<div class="main_block-7_partner partner__title">
+							<span>С нами работает:</span>
+						</div>
+						<div class="main_block-7_partner">
+							<span>Более 12 производителей<br>промышленных весов</span>
+						</div>
+						<div class="main_block-7_partner">
+							<span>Более 10 производителей  лабораторных<br>(высокоточных) весов</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="g-wrap">
+	<div class="article-full">
+		<img class="article-full__img" src="img/pages/index/b8_1.png">
+		<article class="article-full__content article article_vertical">
+			<div class="article__info">
+				<div class="article__date">18.05.2016</div>
+				<div class="article__title">На что нужно обратить внимание</div>
+				<div class="article__text article__text_long">
+					С другой стороны постоянное информационно-пропагандистское обеспечение нашей
+					деятельности способствует подготовки и реализации систем массового участия.
+					Идейные соображения высшего порядка, а также реализация намеченных
+				</div>
+			</div>
+			<div class="article__more-main">
+				<a href="#">
+					<span class="link">Подробнее</span>
+					<img src="img/icon/arrow-more.png" alt="more">
+				</a>
+			</div>
+		</article>
+	</div>
+	<div class="article-full article-full_reverse">
+		<img class="article-full__img" src="img/pages/index/b8_2.png">
+		<article class="article-full__content article-full__content_reverse article article_vertical">
+			<div class="article__info">
+				<div class="article__date">18.05.2016</div>
+				<div class="article__title">На что нужно обратить внимание</div>
+				<div class="article__text article__text_long">
+					С другой стороны постоянное информационно-пропагандистское обеспечение нашей
+					деятельности способствует подготовки и реализации систем массового участия.
+					Идейные соображения высшего порядка, а также реализация намеченных
+				</div>
+			</div>
+			<div class="article__more-main">
+				<a href="#">
+					<span class="link">Подробнее</span>
+					<img src="img/icon/arrow-more.png" alt="more">
+				</a>
+			</div>
+		</article>
+	</div>
+</div>
+
+<div class="g-wrap">
+	<div class="main_block-9">
+		<div class="main_block-9_map"></div>
+		<div class="g-wrap-content">
+			<div class="main_block-9_info">
+				<div class="content-title content-title_dark g-color_black g-padding-0">
+					<span class="g-light">Наши</span> филиалы<br>
+					<div class="decoration decoration_left"></div>
+				</div>
+				<div id="scroll" class="main_block-9_info_list">
+					<div class="main_block-9_info__address address__active">
+						<span>г. Санкт-Петербург, 8 верхний переулок, д. 4</span>
+					</div>
+					<div class="main_block-9_info__address">
+						<span>г. Санкт-Петербург, 8 верхний переулок, д. 4</span>
+					</div>
+					<div class="main_block-9_info__address">
+						<span>г. Санкт-Петербург, 8 верхний переулок, д. 4</span>
+					</div>
+					<div class="main_block-9_info__address">
+						<span>г. Санкт-Петербург, 8 верхний переулок, д. 4</span>
+					</div>
+					<div class="main_block-9_info__address">
+						<span>г. Санкт-Петербург, 8 верхний переулок, д. 4</span>
+					</div>
+					<div class="main_block-9_info__address">
+						<span>г. Санкт-Петербург, 8 верхний переулок, д. 4</span>
+					</div>
+					<div class="main_block-9_info__address">
+						<span>г. Санкт-Петербург, 8 верхний переулок, д. 4</span>
+					</div>
+					<div class="main_block-9_info__address">
+						<span>г. Санкт-Петербург, 8 верхний переулок, д. 4</span>
+					</div>
+					<div class="main_block-9_info__address">
+						<span>г. Санкт-Петербург, 8 верхний переулок, д. 4</span>
+					</div>
+					<div class="main_block-9_info__address">
+						<span>г. Санкт-Петербург, 8 верхний переулок, д. 4</span>
+					</div>
+					<div class="main_block-9_info__address">
+						<span>г. Санкт-Петербург, 8 верхний переулок, д. 4</span>
+					</div>
+					<div class="main_block-9_info__address">
+						<span>г. Санкт-Петербург, 8 верхний переулок, д. 4</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="g-wrap-content">
+	<div class="content-group">
+		<div class="g-wrap">
+			<div class="g-wrap-content">
+				<div class="content-title content-title_filter"><span class="g-light">Остались</span> вопросы?</div>
+				<p class="desc-filter-question">Заходите к нам на чашечку кофе или закажите обратный звонок</p>
+				<form class="form form_horiz">
+					<input class="input input_horiz" name="name" placeholder="Ваше имя">
+					<input class="input input_horiz" name="phone" placeholder="Ваш телефон">
+					<input type="submit" class="btn btn-request" value="Заказать звонок">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="footer__wrap g-wrap-content">
+	<div class="footer__item">
+		<a href="#"><img class="logo footer__logo" src="./img/logo_footer.png"></a>
+		<div class="footer__work-time">
+			Часы работы:<br>
+			Понедельник – пятница<br>
+			С 8:00 по 17:40
+		</div>
+	</div>
+	<div class="footer__item footer__item_middle">
+		Вся представленная на сайте информация, носит информационный характер и ни при каких условиях не является
+		публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации.
+	</div>
+	<div class="footer__item">
+		ООО «Бюро Весов» ИНН 7814168661<br>
+		ОГРН 1157847011013<br>
+		<br>
+		<br>
+		© 2009-2016 «Бюро Весов» - комплексные поставки электронных весов в России.
+	</div>
+</div>
+</footer>
+
+<script src="./js/fotorama.js"></script>
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/lightbox.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

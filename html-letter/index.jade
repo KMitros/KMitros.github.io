@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	title Document
+	link(rel="stylesheet", href="css/style.css")
+	meta(charset="UTF-8")
+	
+body
+	.email-container
+		.email-header
+			.email-center
+				.email-header-topline
+					a.email-logo(href="#", alt="Alt")
+						img(src="img/logo.png")
+
+					.email-social-wrap
+						a(href="#")
+							img(src="img/soc_twitter.png", alt="Alt")
+						a(href="#")
+							img(src="img/soc_vk.png", alt="Alt")
+						a(href="#")
+							img(src="img/soc_fb.png", alt="Alt")
+
+				.email-header-top.
+					Самое выгодное предложение! <br>  Lorem ipsum dolor sit.
+
+				a(href="#").email-button Подробнее	
+		
+		.email-content
+			.email-center
+				.email-teasers-wrap
+						.email-teaser-item
+							img(src="img/icon_1.png", alt="Alt")
+							p Дружелюбный персонал	
+
+						.email-teaser-item
+							img(src="img/icon_2.png", alt="Alt")
+							p Быстрая доставка
+
+						.email-teaser-item
+							img(src="img/icon_3.png", alt="Alt")
+							p И ещё много разного	
+			
+				.email-sale-txt Каждый клиент получает скидку
+
+				.email-products-wrap
+
+					-for (var x = 1; x < 5; x++)
+						.email-products-item
+							a(href="#")
+								img(src="img/items/" + x +".jpg", alt="Alt")
+							.email-price 2 000 руб.
+							a(href="#").product-button	Заказать
+
+			.email-footer.
+				"Отличное предложение" <a href="#">Отписаться от рассылки</a>.
+
+								
